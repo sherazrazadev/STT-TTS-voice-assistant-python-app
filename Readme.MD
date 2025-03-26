@@ -34,10 +34,17 @@ Make sure to replace the placeholder values with your actual API keys from OpenA
 
 Run the Server
 To run the FastAPI server locally, execute the following command:
+There are two app main and main2 , for websocket voice conversation i used `server.py` two but for normal audio input and output i used `main.py`.
 
 ```bash
 uvicorn main:app --reload
 ```
+if you want to test websocket run   the following command:
+```bash
+uvicorn server:app --reload
+```
+and use the `test_send.py` to audio audio file and it will save the response in same directory
+
 The server will start at http://127.0.0.1:8000.
 
 You can access the API documentation (Swagger UI) at http://127.0.0.1:8000/docs.
