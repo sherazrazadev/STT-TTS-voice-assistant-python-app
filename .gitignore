@@ -1,2 +1,3 @@
 /.env
 /tester.wav
+/__pycache__/*
